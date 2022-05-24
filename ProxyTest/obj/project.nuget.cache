@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "hJBhA3E9QJ27zNp8j/VfzbE65QU9UYU2+GB1hOh3G0oHK1gDXsZcOwGNc9dnmzGdjUyQEAejKBi5yeg/0DcD4w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\oleksandr.polazhynet\\source\\repos\\ProxyTest\\ProxyTest\\ProxyTest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\oleksandr.polazhynet\\.nuget\\packages\\fryproxy\\1.2.1\\fryproxy.1.2.1.nupkg.sha512",
+    "C:\\Users\\oleksandr.polazhynet\\.nuget\\packages\\log4net\\2.0.3\\log4net.2.0.3.nupkg.sha512",
+    "C:\\Users\\oleksandr.polazhynet\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512",
+    "C:\\Users\\oleksandr.polazhynet\\.nuget\\packages\\nunit3testadapter\\4.2.1\\nunit3testadapter.4.2.1.nupkg.sha512",
+    "C:\\Users\\oleksandr.polazhynet\\.nuget\\packages\\selenium.support\\3.141.0\\selenium.support.3.141.0.nupkg.sha512",
+    "C:\\Users\\oleksandr.polazhynet\\.nuget\\packages\\selenium.webdriver\\3.141.0\\selenium.webdriver.3.141.0.nupkg.sha512",
+    "C:\\Users\\oleksandr.polazhynet\\.nuget\\packages\\selenium.webdriver.chromedriver\\101.0.4951.4100\\selenium.webdriver.chromedriver.101.0.4951.4100.nupkg.sha512"
+  ],
+  "logs": []
+}
