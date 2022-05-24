@@ -10,28 +10,6 @@ namespace ProxyTest
     public static class DriverOptions
     {
 
-        public static ICapabilities ForRemoteBrowser(BrowserType browserType, Proxy proxy = null, string culture = null)
-        {
-            return CreateDesiredCapabilities(browserType, proxy, culture);
-        }
-
-        private static ICapabilities CreateDesiredCapabilities(BrowserType browserType, Proxy proxy = null,
-            string culture = null)
-        {
-            OpenQA.Selenium.DriverOptions browserOptions;
-
-            switch (browserType)
-            {
-                case BrowserType.Chrome:
-                    browserOptions = ForChrome(proxy, culture);
-                    break;
-                default:
-                    throw new ArgumentException($"unsupported browser type [{browserType}]", nameof(browserType));
-            }
-
-            return browserOptions.ToCapabilities();
-        }
-
         #region DesktopChrome
 
         public static ChromeOptions ForChrome(Proxy proxy = null, string culture = null)

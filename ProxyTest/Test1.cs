@@ -17,10 +17,10 @@ namespace ProxyTest
             var browserFactory = new FryBrowserProxyFactory(browserConfiguration);
 
             //******************* Use This webdriverFactory to engage LT hub
-            var webdriverFactory =new RemoteWebDriverFactory(BrowserType.Chrome, "foo", 111, TimeSpan.FromSeconds(30));
+            //var webdriverFactory =new RemoteWebDriverFactory(BrowserType.Chrome, "foo", 111, TimeSpan.FromSeconds(30));
 
             //This webDriverFactory for testing proxy workability locally. Comment it to work with LT hub.
-            //var webdriverFactory = new LocalWebDriverFactory(BrowserType.Chrome, TimeSpan.FromSeconds(30));
+            var webdriverFactory = new LocalWebDriverFactory(BrowserType.Chrome, TimeSpan.FromSeconds(30));
 
             var proxy = browserFactory.Create();
 
@@ -32,9 +32,9 @@ namespace ProxyTest
 
             requestCollector.Attach(proxiedBrowser);
 
-            proxiedBrowser.NavigateTo("https://www.justanswer.com/sip/car");
+            proxiedBrowser.NavigateTo("https://www.justanswer.com/car/jf001-2014-sprinter-van-will-crank-few-seconds.html?membershipModelTrialType=NoTrial");
 
-            Assert.That(() => requestCollector.Requests.Count, Is.GreaterThan(1111).After(2000));
+            Assert.That(() => requestCollector.Requests.Count, Is.GreaterThan(100).After(1000));
 
         }
 
